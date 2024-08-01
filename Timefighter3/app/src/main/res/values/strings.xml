@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Timefighter2</string>
+    <string name="app_name">Timefighter3</string>
     <string name="hello">Hello World!</string>
     <string name="tap_me">Tap Me!</string>
     <string name="your_score">Your Score: %1$d</string>

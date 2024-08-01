@@ -2,7 +2,6 @@ package com.trios2024amdj.timefighter2
 
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
@@ -11,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import com.trios2024ammb.timefighter3.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         // Connect views to variables
         gameScoreTextView = findViewById(R.id.game_score_text_view)
         timeLeftTextView = findViewById(R.id.time_left_text_view)
-        tapMeButton = findViewById(R.id.tap_me_button)
+        tapMeButton = findViewById(R.id.hit_me_button)
         constraintLayout = findViewById(R.id.main)
 
         // Load animations
@@ -105,8 +105,8 @@ class MainActivity : AppCompatActivity() {
 
         val constraintSet = ConstraintSet()
         constraintSet.clone(constraintLayout)
-        constraintSet.setMargin(R.id.tap_me_button, ConstraintSet.START, randomStartMargin)
-        constraintSet.setMargin(R.id.tap_me_button, ConstraintSet.TOP, randomTopMargin)
+        constraintSet.setMargin(R.id.hit_me_button, ConstraintSet.START, randomStartMargin)
+        constraintSet.setMargin(R.id.hit_me_button, ConstraintSet.TOP, randomTopMargin)
         constraintSet.applyTo(constraintLayout)
 
         // Apply move animation
